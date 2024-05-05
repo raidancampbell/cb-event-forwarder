@@ -1125,6 +1125,8 @@ func filemodAction(a CbFileModMsg_CbFileModAction) string {
 		return "delete"
 	case CbFileModMsg_actionFileModLastWrite:
 		return "lastwrite"
+	case CbFileModMsg_actionFileModOpen:
+		return "open"
 	}
 	return fmt.Sprintf("unknown (%d)", int32(a))
 }
